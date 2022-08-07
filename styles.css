@@ -176,7 +176,18 @@ header {
 /* Apple watch styles */
 
 .title-heading-watch {
-    
+    /* Sets the height for the title */
+    height: 7.8rem;
+    background: url("images/hero/watch/logo_watch_large.png") center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+}
+
+.watch {
+    text-align: center;
+    padding-bottom: 20rem;
+    background: url("images/hero/watch/watch_large.jpg");
+    background-size: 100% 73.6rem;
 }
 
 
@@ -190,13 +201,8 @@ header {
   background-size: auto 73.6rem;
   background-position: center;
   background-repeat: no-repeat;
-  border-top: 0.6rem solid white;
-  border-bottom: 0.6rem solid white;
+
   height: 69.2rem;
 
 }
-
-.iphone-11-pro {
-    border-top: none;
-  }
 
