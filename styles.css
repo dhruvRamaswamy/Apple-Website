@@ -1,0 +1,202 @@
+/*CSS*/
+
+/* Starter */
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("fonts/SFPROTEXT.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  kerning: 200px;
+  font-family: "SF Pro", sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 140;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  /* Backdrop-filter gives a blur to the background */
+  backdrop-filter: blur(2rem);
+
+  /* Apply the width to the header, not the nav-list */
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -1rem;
+}
+
+/* On the big screens you don't want to see the mobile list */
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  color: white;
+  padding: 0 1rem;
+  transition: opacity 0.5s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+/* To align items you have to give the container a width */
+
+.nav-link-apple {
+  /* If you changed the width it wouldn't actually strech the image it would make the container winder */
+  width: 1.6rem;
+  /* This is the exact height of the navbar, so its able to center. All the other elements in the nav follow. */
+  height: 4.4rem;
+  /* Apple svg */
+  background: url("images/icons/apple.svg") center no-repeat;
+}
+
+.nav-link-search {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url("images/icons/search.svg") center no-repeat;
+}
+
+.nav-link-bag {
+  width: 1.4rem;
+  height: 4.4rem;
+  background: url("images/icons/bag.svg") center no-repeat;
+}
+
+/* Iphone 11 pro styles */
+
+.iphone-11-pro {
+  background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
+  margin-top: 4.4rem;
+  /* 73.6rem is the height of the image */
+}
+
+.iphone-11-pro .container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+/* Text of iphone container */
+
+.title {
+  /* Notice how the image of the iphone isn't moving even when you adjust the padding of the title. This is because we have a fixed container that happens to have an iphone as a background */
+  padding-top: 5.5rem;
+}
+
+.title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+
+.title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 400;
+}
+
+.title-price {
+  font-size: 1.7rem;
+  color: #888;
+  margin-top: 0.68rem;
+}
+
+.cta {
+  margin-top: 1.8rem;
+}
+
+.cta-link {
+  color: #66bbff;
+  font-size: 1.7rem;
+  display: inline-block;
+}
+
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.cta-link:hover {
+  padding-bottom: 0px;
+  border-bottom: 1px solid #66bbff;
+}
+
+/* Iphone 11 styles */
+
+.iphone-11 {
+  background: url("images/hero/iphone-11/iphone_11_large.jpg");
+}
+
+.iphone-11 .container {
+    text-align: center;
+}
+
+.cta-link-darker {
+    color: #0070c9;
+}
+
+.cta-link-darker:hover {
+    border-bottom: 1px solid #0070c9;
+}
+
+/* Apple watch styles */
+
+.title-heading-watch {
+    
+}
+
+
+
+
+
+
+
+.hero {
+  /* Height of the image */
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid white;
+  border-bottom: 0.6rem solid white;
+  height: 69.2rem;
+
+}
+
+.iphone-11-pro {
+    border-top: none;
+  }
+
