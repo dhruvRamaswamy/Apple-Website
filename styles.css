@@ -185,15 +185,9 @@ header {
 
 .watch {
     text-align: center;
-    padding-bottom: 20rem;
     background: url("images/hero/watch/watch_large.jpg");
     background-size: 100% 73.6rem;
 }
-
-
-
-
-
 
 
 .hero {
@@ -206,3 +200,166 @@ header {
 
 }
 
+@media screen and (max-width: 1068px) {
+
+    /* Setting the images */
+    .iphone-11-pro {
+        background: url("images/hero/iphone-11-pro/iphone_11_pro_medium.jpg");
+    }
+
+    .iphone-11 {
+        background: url("images/hero/iphone-11/iphone_11_medium.jpg")
+    }
+
+    .watch {
+        background: url("images/hero/watch/watch_medium.jpg");
+        background-position:  center;
+    }
+
+    .title-heading-watch {
+        background: url("images/hero/watch/logo_watch_medium.png") no-repeat;
+        background-position: bottom center;
+
+    }
+
+
+
+    .title-heading {
+        font-size: 4.4rem;
+    }
+
+    .title-sub-heading {
+        font-size: 2.4rem;
+    }
+
+    .cta-link:nth-child(2) {
+        margin-left: 2rem;
+    }
+
+    .hero {
+        height: 65rem;
+        background-size: auto 69.8rem;
+        /* Keeps background in the bottom and center when it is zoomed in */
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* Setting the images */
+    header {
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1)
+        height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+
+    header .container {
+        /* Prevent some issues down the line */
+        padding: 0;
+    }
+
+    .iphone-11-pro {
+        margin-top: 4.8rem;
+    }
+
+    .nav-list-larger {
+        /* Gets the big nav out of the way */
+        display: none;
+    }
+
+    .nav-list {
+        margin: 0;
+    }
+
+    .nav-list-mobile {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .line {
+        position: absolute;
+        width: 1.6rem;
+        height: 1px;
+        background-color: white;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .line-top {
+        margin-top: 7px;
+    }
+
+    .line-bottom {
+        margin-top: -7px;
+    }
+
+    .mobile-menu {
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+
+    /* Setting the images */
+    .iphone-11-pro {
+        background: url("images/hero/iphone-11-pro/iphone_11_pro_small.jpg") no-repeat center;
+    }
+
+    .iphone-11 {
+        background: url("images/hero/iphone-11/iphone_11_small.jpg") no-repeat center;
+    }
+
+    .watch {
+        background: url("images/hero/watch/watch_small.jpg") no-repeat;
+        background-position:  center;
+        border-top: 1000px #FAFAFA;
+    }
+
+    .title-heading-watch {
+        background: url("images/hero/watch/logo_watch_medium.png") no-repeat;
+        background-position: bottom center;
+    }
+
+
+
+    .hero {
+        margin: 0;
+        height: 50rem;
+    }
+
+    .watch .title {
+        padding-top: 5rem;
+        /* margin-bottom: 5rem; */
+    }
+
+    .watch {
+        height: 54rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        min-width: 477px;
+        width: fit-content !important;
+
+    }
+
+}
